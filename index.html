@@ -10,7 +10,10 @@
         var redirect = sessionStorage.redirect;
         delete sessionStorage.redirect;
         if (redirect && redirect != location.href) {
-          history.replaceState(null, null, redirect.split('?')[0]);
+          // Let React Router handle the routing and 404s
+          const cleanUrl = redirect.split('?')[0];
+          history.replaceState(null, null, cleanUrl);
+          // The actual routing will be handled by your React Router's configuration
         }
       })();
     </script>
