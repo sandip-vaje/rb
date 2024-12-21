@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="800" height="600"></rect>
+        <g transform="translate(100, 100)">
+            <!-- Cloud -->
+            <path d="M500,250 C500,180 450,150 400,150 C400,70 330,0 250,0 C170,0 100,70 100,150 C50,150 0,180 0,250 C0,320 50,350 100,350 L400,350 C450,350 500,320 500,250" fill="#B30707"></path>
+            
+            <!-- Server Icons -->
+            <g transform="translate(150, 150)" fill="#FFFFFF">
+                <rect x="0" y="0" width="60" height="80" rx="4"></rect>
+                <rect x="80" y="0" width="60" height="80" rx="4"></rect>
+                <rect x="160" y="0" width="60" height="80" rx="4"></rect>
+            </g>
+            
+            <!-- Connection Lines -->
+            <g transform="translate(150, 240)" stroke="#FFFFFF" stroke-width="2">
+                <line x1="30" y1="0" x2="30" y2="40"></line>
+                <line x1="110" y1="0" x2="110" y2="40"></line>
+                <line x1="190" y1="0" x2="190" y2="40"></line>
+                <line x1="30" y1="40" x2="190" y2="40"></line>
+            </g>
+        </g>
+    </g>
+</svg>

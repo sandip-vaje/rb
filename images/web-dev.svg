@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="800" height="600"></rect>
+        <g transform="translate(100, 50)">
+            <!-- Browser Window -->
+            <rect fill="#F3F4F6" x="0" y="0" width="600" height="400" rx="8"></rect>
+            <rect fill="#B30707" x="0" y="0" width="600" height="40" rx="8 8 0 0"></rect>
+            <circle fill="#FF5F57" cx="20" cy="20" r="6"></circle>
+            <circle fill="#FFBD2E" cx="40" cy="20" r="6"></circle>
+            <circle fill="#28CA41" cx="60" cy="20" r="6"></circle>
+            
+            <!-- Code Elements -->
+            <rect fill="#FFFFFF" x="20" y="60" width="560" height="320" rx="4"></rect>
+            <g transform="translate(40, 80)" fill="#B30707">
+                <rect x="0" y="0" width="100" height="10" rx="2"></rect>
+                <rect x="0" y="30" width="200" height="10" rx="2"></rect>
+                <rect x="0" y="60" width="150" height="10" rx="2"></rect>
+                <rect x="0" y="90" width="180" height="10" rx="2"></rect>
+            </g>
+            
+            <!-- UI Elements -->
+            <g transform="translate(300, 80)" fill="#141414">
+                <rect x="0" y="0" width="240" height="40" rx="4"></rect>
+                <rect x="0" y="60" width="240" height="40" rx="4"></rect>
+                <rect x="0" y="120" width="240" height="40" rx="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
