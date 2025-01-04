@@ -3,11 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Redbit Technology</title>
-    <script>
-      sessionStorage.redirect = location.href;
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
     </script>
-    <meta http-equiv="refresh" content="0;URL='/'">
+    <script>
+      // Store the URL the user was trying to access
+      sessionStorage.redirect = location.pathname + location.search;
+      // Redirect all 404 traffic to index.html
+      window.location.href = '/';
+    </script>
   </head>
   <body>
+    Redirecting...
   </body>
 </html>
