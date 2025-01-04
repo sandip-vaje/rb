@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Primary Meta Tags -->
-    <title>Redbit Technology | Innovative IT Solutions</title>
-    <meta name="title" content="Redbit Technology | Innovative IT Solutions" />
-    <meta name="description" content="Redbit Technology provides cutting-edge IT solutions and services. Transform your business with our innovative technology solutions." />
-    <meta name="keywords" content="IT solutions, technology services, Redbit Technology, Pune, digital transformation" />
+    <title>404 - Page Not Found | Redbit Technology</title>
+    <meta name="title" content="404 - Page Not Found | Redbit Technology" />
+    <meta name="description" content="The page you are looking for might have been removed, had its name changed, or is temporarily unavailable." />
+    <meta name="keywords" content="page not found, 404, error, Redbit Technology" />
     <meta name="author" content="Redbit Technology" />
     
     <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://redbit.in/" />
-    <meta property="og:title" content="Redbit Technology | Innovative IT Solutions" />
+    <meta property="og:url" content="https://redbit.in/404" />
+    <meta property="og:title" content="404 - Page Not Found | Redbit Technology" />
     <meta property="og:site_name" content="Redbit Technology" />
-    <meta property="og:description" content="Redbit Technology provides cutting-edge IT solutions and services. Transform your business with our innovative technology solutions." />
+    <meta property="og:description" content="The page you are looking for might have been removed, had its name changed, or is temporarily unavailable." />
     <meta property="og:image" content="https://redbit.in/images/redbit.png" />
     <meta property="og:image:width" content="200" />
     <meta property="og:image:height" content="200" />
@@ -24,9 +24,9 @@
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://redbit.in/" />
-    <meta name="twitter:title" content="Redbit Technology | Innovative IT Solutions" />
-    <meta name="twitter:description" content="Redbit Technology provides cutting-edge IT solutions and services. Transform your business with our innovative technology solutions." />
+    <meta name="twitter:url" content="https://redbit.in/404" />
+    <meta name="twitter:title" content="404 - Page Not Found | Redbit Technology" />
+    <meta name="twitter:description" content="The page you are looking for might have been removed, had its name changed, or is temporarily unavailable." />
     <meta name="twitter:image" content="https://redbit.in/images/redbit.png" />
     
     <!-- Favicon -->
@@ -37,25 +37,24 @@
     <meta name="theme-color" content="#000000" />
 
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        if (l.search[1] === '/') {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
-    <script>
-      // Store the URL the user was trying to access
-      sessionStorage.redirect = location.pathname + location.search;
-      // Redirect all 404 traffic to index.html
-      window.location.href = '/';
+      // List of valid routes
+      const validRoutes = ['/', '/products', '/solutions', '/company', '/contact'];
+      
+      // Get the current path
+      const currentPath = window.location.pathname;
+      
+      // Check if the current path is valid
+      const isValidRoute = validRoutes.includes(currentPath);
+      
+      if (isValidRoute) {
+        // If it's a valid route, store it and redirect to index.html
+        sessionStorage.redirect = currentPath;
+        window.location.href = '/';
+      } else {
+        // If it's an invalid route, store /404 path to show the 404 page
+        sessionStorage.redirect = '/404';
+        window.location.href = '/';
+      }
     </script>
   </head>
   <body>
